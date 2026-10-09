@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Aayan Esports | Admin Panel</title>
+
+  <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+
+  <header>
+
+    <div class="brand">
+      🔥 AAYAN <span>ESPORTS</span>
+    </div>
+
+    <a href="index.html" class="back">
+      ← Tournament
+    </a>
+
+  </header>
+
+
+  <main>
+
+    <section class="top">
+
+      <div>
+        <p class="tag">ORGANIZER CONTROL</p>
+
+        <h1>
+          Admin Panel
+        </h1>
+
+        <p>
+          Manage registered teams and tournament points.
+        </p>
+      </div>
+
+
+      <div class="admin-stats">
+
+        <div>
+          <b id="totalTeams">0</b>
+          <span>Total Teams</span>
+        </div>
+
+        <div>
+          <b>12</b>
+          <span>Maximum Teams</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= TEAMS ================= -->
+
+    <section class="panel">
+
+      <div class="panel-head">
+
+        <div>
+          <p class="tag">TEAM MANAGEMENT</p>
+
+          <h2>
+            Registered Teams
+          </h2>
+        </div>
+
+        <button
+          class="danger"
+          onclick="deleteAllTeams()"
+        >
+          Delete All
+        </button>
+
+      </div>
+
+
+      <div class="table-container">
+
+        <table>
+
+          <thead>
+
+            <tr>
+
+              <th>#</th>
+
+              <th>Team</th>
+
+              <th>Captain</th>
+
+              <th>UID</th>
+
+              <th>Players</th>
+
+              <th>Actions</th>
+
+            </tr>
+
+          </thead>
+
+
+          <tbody id="teamsBody">
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= POINTS ================= -->
+
+    <section class="panel">
+
+      <div class="panel-head">
+
+        <div>
+
+          <p class="tag">LEADERBOARD</p>
+
+          <h2>
+            Points Management
+          </h2>
+
+        </div>
+
+      </div>
+
+
+      <div class="table-container">
+
+        <table>
+
+          <thead>
+
+            <tr>
+
+              <th>#</th>
+
+              <th>Team</th>
+
+              <th>Placement</th>
+
+              <th>Kills</th>
+
+              <th>Total</th>
+
+              <th>Save</th>
+
+            </tr>
+
+          </thead>
+
+
+          <tbody id="pointsBody">
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ================= EDIT MODAL ================= -->
+
+  <div
+    id="editModal"
+    class="modal"
+  >
+
+    <div class="modal-box">
+
+      <div class="modal-head">
+
+        <h2>
+          Edit Team
+        </h2>
+
+        <button
+          onclick="closeModal()"
+          class="close"
+        >
+          ×
+        </button>
+
+      </div>
+
+
+      <form id="editForm">
+
+        <input
+          type="hidden"
+          id="editIndex"
+        >
+
+
+        <label>
+          Team Name
+
+          <input
+            id="editTeam"
+            required
+          >
+
+        </label>
+
+
+        <label>
+          Captain Name
+
+          <input
+            id="editCaptain"
+            required
+          >
+
+        </label>
+
+
+        <label>
+          Free Fire UID
+
+          <input
+            id="editUID"
+            required
+          >
+
+        </label>
+
+
+        <label>
+          Contact
+
+          <input
+            id="editContact"
+            required
+          >
+
+        </label>
+
+
+        <label>
+          Player 1
+
+          <input
+            id="editP1"
+            required
+          >
+
+        </label>
+
+
+        <label>
+          Player 2
+
+          <input
+            id="editP2"
+            required
+          >
+
+        </label>
+
+
+        <label>
+          Player 3
+
+          <input
+            id="editP3"
+            required
+          >
+
+        </label>
+
+
+        <label>
+          Player 4
+
+          <input
+            id="editP4"
+            required
+          >
+
+        </label>
+
+
+        <button
+          class="save"
+          type="submit"
+        >
+          Save Changes
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+
+  <script src="admin.js"></script>
+
+</body>
+
+</html>

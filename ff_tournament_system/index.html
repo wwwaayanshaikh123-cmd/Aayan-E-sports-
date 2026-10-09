@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Aayan Esports | Free Fire Tournament</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+
+  <header>
+
+    <div class="brand">
+      🔥 AAYAN <span>ESPORTS</span>
+    </div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#register">Register</a>
+      <a href="#rules">Rules</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#points">Points</a>
+    </nav>
+
+  </header>
+
+
+  <!-- ================= MAIN ================= -->
+
+  <main>
+
+
+    <!-- ================= HOME ================= -->
+
+    <section id="home" class="hero">
+
+      <div>
+
+        <p class="tag">
+          FREE FIRE COMMUNITY TOURNAMENT
+        </p>
+
+        <h1>
+          CLASH <span>OF SQUADS</span>
+        </h1>
+
+        <p class="lead">
+          Compete. Survive. Dominate.
+          Register your squad and fight for the top spot.
+        </p>
+
+
+        <div class="actions">
+
+          <a class="btn" href="#register">
+            Register Team
+          </a>
+
+          <a class="btn ghost" href="#rules">
+            View Rules
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- TOURNAMENT INFORMATION -->
+
+      <div class="hero-card">
+
+        <div>
+          <b>💰 Entry Fee</b>
+          <strong>₹25 / Player</strong>
+        </div>
+
+        <div>
+          <b>🏆 Prize Pool</b>
+          <strong>₹200</strong>
+        </div>
+
+        <div>
+          <b>👥 Format</b>
+          <strong>Squad</strong>
+        </div>
+
+        <div>
+          <b>🎮 Matches</b>
+          <strong>3 Rounds</strong>
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ================= STATS ================= -->
+
+    <section class="stats">
+
+      <div>
+        <b id="teamCount">0</b>
+        <small>Teams Registered</small>
+      </div>
+
+      <div>
+        <b>12</b>
+        <small>Team Slots</small>
+      </div>
+
+      <div>
+        <b>3</b>
+        <small>Matches</small>
+      </div>
+
+      <div>
+        <b>₹200</b>
+        <small>Prize Pool</small>
+      </div>
+
+    </section>
+
+
+
+    <!-- ================= REGISTRATION ================= -->
+
+    <section id="register" class="section">
+
+      <div class="section-head">
+
+        <p class="tag">
+          JOIN THE BATTLE
+        </p>
+
+        <h2>
+          Team Registration
+        </h2>
+
+      </div>
+
+
+      <form id="registrationForm">
+
+        <div class="grid">
+
+
+          <label>
+
+            Team Name
+
+            <input
+              type="text"
+              name="team"
+              required
+              placeholder="e.g. Aayan Warriors"
+            >
+
+          </label>
+
+
+
+          <label>
+
+            Captain Name
+
+            <input
+              type="text"
+              name="captain"
+              required
+              placeholder="Captain name"
+            >
+
+          </label>
+
+
+
+          <label>
+
+            Captain Free Fire UID
+
+            <input
+              type="text"
+              name="uid"
+              required
+              inputmode="numeric"
+              placeholder="Free Fire UID"
+            >
+
+          </label>
+
+
+
+          <label>
+
+            WhatsApp / Contact
+
+            <input
+              type="text"
+              name="contact"
+              required
+              placeholder="Contact number"
+            >
+
+          </label>
+
+        </div>
+
+
+        <h3>
+          Players
+        </h3>
+
+
+        <div class="grid">
+
+
+          <label>
+
+            Player 1
+
+            <input
+              type="text"
+              name="p1"
+              required
+              placeholder="Player 1 name"
+            >
+
+          </label>
+
+
+
+          <label>
+
+            Player 2
+
+            <input
+              type="text"
+              name="p2"
+              required
+              placeholder="Player 2 name"
+            >
+
+          </label>
+
+
+
+          <label>
+
+            Player 3
+
+            <input
+              type="text"
+              name="p3"
+              required
+              placeholder="Player 3 name"
+            >
+
+          </label>
+
+
+
+          <label>
+
+            Player 4
+
+            <input
+              type="text"
+              name="p4"
+              required
+              placeholder="Player 4 name"
+            >
+
+          </label>
+
+        </div>
+
+
+        <label class="check">
+
+          <input
+            type="checkbox"
+            required
+          >
+
+          I agree to the tournament rules.
+
+        </label>
+
+
+        <button
+          class="btn"
+          type="submit"
+        >
+          Submit Registration
+        </button>
+
+
+        <p
+          id="formMessage"
+          class="message"
+        ></p>
+
+      </form>
+
+    </section>
+
+
+
+    <!-- ================= RULES ================= -->
+
+    <section id="rules" class="section alt">
+
+      <div class="section-head">
+
+        <p class="tag">
+          READ BEFORE PLAYING
+        </p>
+
+        <h2>
+          Tournament Rules
+        </h2>
+
+      </div>
+
+
+      <div class="cards">
+
+
+        <article>
+
+          <b>01</b>
+
+          <h3>
+            Fair Play
+          </h3>
+
+          <p>
+            No hacks, scripts, glitches, teaming
+            or other unfair play.
+          </p>
+
+        </article>
+
+
+
+        <article>
+
+          <b>02</b>
+
+          <h3>
+            Room Entry
+          </h3>
+
+          <p>
+            Room ID and password will be shared
+            with registered captains.
+          </p>
+
+        </article>
+
+
+
+        <article>
+
+          <b>03</b>
+
+          <h3>
+            Check-in
+          </h3>
+
+          <p>
+            Teams should check in before the
+            announced room start time.
+          </p>
+
+        </article>
+
+
+
+        <article>
+
+          <b>04</b>
+
+          <h3>
+            Evidence
+          </h3>
+
+          <p>
+            Keep match screenshots/results if
+            the organizer asks for verification.
+          </p>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ================= SCHEDULE ================= -->
+
+    <section id="schedule" class="section">
+
+      <div class="section-head">
+
+        <p class="tag">
+          MATCH DAY
+        </p>
+
+        <h2>
+          Match Schedule
+        </h2>
+
+      </div>
+
+
+      <div class="table-wrap">
+
+        <table>
+
+          <thead>
+
+            <tr>
+
+              <th>
+                Round
+              </th>
+
+              <th>
+                Mode
+              </th>
+
+              <th>
+                Time
+              </th>
+
+              <th>
+                Status
+              </th>
+
+            </tr>
+
+          </thead>
+
+
+          <tbody>
+
+            <tr>
+
+              <td>
+                Match 1
+              </td>
+
+              <td>
+                Squad
+              </td>
+
+              <td>
+                7:00 PM
+              </td>
+
+              <td>
+                Upcoming
+              </td>
+
+            </tr>
+
+
+            <tr>
+
+              <td>
+                Match 2
+              </td>
+
+              <td>
+                Squad
+              </td>
+
+              <td>
+                7:30 PM
+              </td>
+
+              <td>
+                Upcoming
+              </td>
+
+            </tr>
+
+
+            <tr>
+
+              <td>
+                Match 3
+              </td>
+
+              <td>
+                Squad
+              </td>
+
+              <td>
+                8:00 PM
+              </td>
+
+              <td>
+                Upcoming
+              </td>
+
+            </tr>
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ================= POINTS TABLE ================= -->
+
+    <section id="points" class="section alt">
+
+      <div class="section-head">
+
+        <p class="tag">
+          LEADERBOARD
+        </p>
+
+        <h2>
+          Points Table
+        </h2>
+
+      </div>
+
+
+      <div class="table-wrap">
+
+        <table id="pointsTable">
+
+          <thead>
+
+            <tr>
+
+              <th>
+                #
+              </th>
+
+              <th>
+                Team
+              </th>
+
+              <th>
+                Placement
+              </th>
+
+              <th>
+                Kills
+              </th>
+
+              <th>
+                Total
+              </th>
+
+            </tr>
+
+          </thead>
+
+
+          <tbody>
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ================= REGISTERED TEAMS ================= -->
+
+    <section class="section admin">
+
+      <div class="section-head">
+
+        <p class="tag">
+          TOURNAMENT TEAMS
+        </p>
+
+        <h2>
+          Registered Teams
+        </h2>
+
+      </div>
+
+
+      <div class="table-wrap">
+
+        <table id="teamsTable">
+
+          <thead>
+
+            <tr>
+
+              <th>
+                Team
+              </th>
+
+              <th>
+                Captain
+              </th>
+
+              <th>
+                UID
+              </th>
+
+              <th>
+                Players
+              </th>
+
+            </tr>
+
+          </thead>
+
+
+          <tbody>
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer>
+
+    © 2026 Aayan Esports • Free Fire Community Tournament
+
+  </footer>
+
+
+  <!-- ================= JAVASCRIPT ================= -->
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
